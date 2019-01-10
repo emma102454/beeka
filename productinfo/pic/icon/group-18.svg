@@ -1,0 +1,30 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="41" height="47" viewBox="0 0 41 47">
+    <defs>
+        <rect id="b" width="320" height="346" y="13" rx="8"/>
+        <filter id="a" width="104.4%" height="104%" x="-2.2%" y="-1.4%" filterUnits="objectBoundingBox">
+            <feOffset dy="2" in="SourceAlpha" result="shadowOffsetOuter1"/>
+            <feGaussianBlur in="shadowOffsetOuter1" result="shadowBlurOuter1" stdDeviation="2"/>
+            <feComposite in="shadowBlurOuter1" in2="SourceAlpha" operator="out" result="shadowBlurOuter1"/>
+            <feColorMatrix in="shadowBlurOuter1" values="0 0 0 0 0.774633291 0 0 0 0 0.772020004 0 0 0 0 0.772020004 0 0 0 1 0"/>
+        </filter>
+        <path id="c" d="M34.5 0H5.75C2.587 0 .029 2.288.029 5.083L0 45.75l20.125-7.625L40.25 45.75V5.083C40.25 2.287 37.663 0 34.5 0z"/>
+    </defs>
+    <g fill="none" fill-rule="evenodd">
+        <path fill="#FFF" d="M-285-499H75v2711h-360z"/>
+        <g transform="translate(-265 -7)">
+            <use fill="#000" filter="url(#a)" xlink:href="#b"/>
+            <use fill="#FDD8BF" fill-opacity=".292" xlink:href="#b"/>
+        </g>
+        <g transform="translate(.375 .625)">
+            <mask id="d" fill="#fff">
+                <use xlink:href="#c"/>
+            </mask>
+            <g fill="#F2485C" mask="url(#d)">
+                <path d="M-14.375-7.625h69v61h-69z"/>
+            </g>
+        </g>
+        <text fill="#FFF" font-family="PingFangTC-Semibold, PingFang TC" font-size="20" font-weight="500" letter-spacing=".659" transform="translate(-14 -7)">
+            <tspan x="24" y="36">優</tspan>
+        </text>
+    </g>
+</svg>

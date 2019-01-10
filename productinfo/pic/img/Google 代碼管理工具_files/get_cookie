@@ -1,0 +1,2 @@
+
+if(0==window.location.href.indexOf("https://tagmanager.google.com/")||0==window.location.href.indexOf("https://optimize.google.com/")){var a=[];var b=[];var c=[];window["previewDebugStatusCallback"](a,b,c)};
