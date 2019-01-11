@@ -1,0 +1,324 @@
+.wrapping{
+    display: grid;
+    grid-template-columns: 1fr auto 1fr;
+    grid-template-rows: auto auto auto;
+}
+.wrapping .header{
+    grid-column: 1 / -1;
+    grid-row: 1 / 2;
+    height: 61px;
+    background-image: linear-gradient(81deg, #fdd8bf, #f97b92, #f85a6c);
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.header .header_logo{
+    display: flex;
+    flex-wrap: nowrap;
+    margin-left: 18px;
+}
+.header img{
+    display: flex;
+    flex-wrap: nowrap;
+    margin-right: 18px;
+}
+.wrapping .main{
+    grid-column: 2 / 3;
+    grid-row: 2 / 3;
+    display: grid;
+    grid-template-columns: auto;
+    grid-template-rows: repeat(4,auto);
+}
+.main .productList{
+    grid-column: 1 / -1;
+    grid-row: 1 / 2;
+}
+.productList .title{
+    font-family: PingFangTC;
+    font-size: 16px;
+    letter-spacing: 0.7px;
+    color: #f2485c;
+    margin: 10px 0 0 0;
+    padding-bottom: 7px;
+    border-bottom-width: 1px;
+    border-bottom-style: solid;
+    border-bottom-color: rgba(155, 155, 155, 0.2);
+}
+.productList .title p{
+    margin-left: 24px;
+}
+.block{
+    display: grid;
+    grid-template-columns: auto auto auto;
+    grid-template-rows: auto;
+    border-bottom-width: 1px;
+    border-bottom-style: solid;
+    border-bottom-color: rgba(155, 155, 155, 0.2);
+    padding: 7px 0 7px 0;
+    align-items: center;
+}
+.block .productImg{
+    grid-column: 1 / 2;
+    grid-row: 1 / -1;
+    width: 72px;
+    height: 72px;
+    margin-left: 32px;
+}
+.block .productInfo{
+    grid-column: 2 / 3;
+    grid-row: 1 / -1;
+    justify-items: start;
+}
+.productInfo .productSpec{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+}
+.gap{
+    padding-bottom: 8px;
+}
+.productInfo .productName{
+    font-family: PingFangTC;
+    font-size: 14px;
+    font-weight: 500;
+    letter-spacing: 0.7px;
+    color: #696869;
+}
+.productSpec p{
+    font-family: PingFangTC;
+    font-size: 12px;
+    letter-spacing: 0.6px;
+    color: #9b9b9b;
+}
+.arrow{
+    border: solid #80868b;
+    border-width: 0 1.5px 1.5px 0;
+    display: inline-block;
+    padding: 3px;
+}
+.right{
+    transform: rotate(-45deg);
+    -webkit-transform: rotate(-45deg);
+}
+.down{
+    transform: rotate(45deg);
+    -webkit-transform: rotate(45deg);
+}
+.more{
+    background: linear-gradient(white,rgba(155, 155, 155, 0.2));
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    padding-top: 12px;
+    padding-bottom: 12px;
+    width: auto;
+}
+.main .campaignInfo{
+    grid-column: 1 / -1;
+    grid-row: 2 / 3;
+}
+.main .descriptionBlock{
+    grid-column: 1 / -1;
+    grid-row: 3 / 4;
+}
+.main .applyButton{
+    grid-column: 1 / -1;
+    grid-row: 4 / -1;
+}
+.count{
+    display: flex;
+    justify-content: space-around;
+    align-items: baseline;
+    background-color: rgba(253, 216, 191, 0.29);
+    padding: 12px 40px 12px 40px;
+}
+.countText{
+    font-family: PingFangTC;
+    font-size: 14px;
+    letter-spacing: 0.6px;
+    color: #80868b;
+}
+.number{
+    color: #f2485c;
+    font-size: 16px;
+    letter-spacing: 0.7px;
+}
+.flow{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    padding: 8px 46px 8px 46px;
+    border-bottom-width: 1px;
+    border-bottom-style: solid;
+    border-bottom-color: rgba(155, 155, 155, 0.2);
+}
+.flowChart{
+    display: flex;
+    flex-direction: column;
+}
+.flowChart p{
+    font-family: PingFangTC;
+    font-size: 12px;
+    letter-spacing: 0.6px;
+    color: #9b9b9b;
+    margin-top: 2px;
+}
+.distribution{
+    padding-top: 4px;
+    padding-bottom: 4px;
+}
+.comment{
+    padding-top: 2px;
+    padding-bottom: 3px;
+}
+.dot{
+    height: 3px;
+    width: 3px;
+    background-color: #80868b;
+    border-radius: 50%;
+    display: inline-block;
+    margin-right: 2px;
+}
+.flowDot{
+    display: flex;
+    flex-direction: row;
+}
+.nowFlowChart{
+    display: flex;
+    flex-direction: column;
+}
+.nowFlowChart p{
+    margin-top: 15px;
+    font-family: PingFangTC;
+    font-size: 12px;
+    letter-spacing: 0.6px;
+    color: #f2485c;
+}
+.nowFlowChart img{
+    z-index: -1;
+    position: absolute;
+}
+.nowDot{
+    height: 10px;
+    width: 10px;
+    background-color: #f2485c;
+    border-radius: 50%;
+}
+.options{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+.options button{
+    background-color: #fff;
+    border: 1px solid white;
+    padding: 12px 50px 12px 50px;
+}
+.options:after {
+    content: "";
+    clear: both;
+    display: table;
+}
+.options button:hover {
+    color: #f2485c;
+}
+.clickAfter{
+    color: #f2485c;
+    font-family: PingFangTC;
+    font-size: 14px;
+    letter-spacing: 0.7px;
+}
+.clickBefore{
+    color: #9b9b9b;
+    font-family: PingFangTC;
+    font-size: 14px;
+    letter-spacing: 0.7px;
+}
+.remakeBlock{
+    display: grid;
+    grid-template-columns: auto;
+    grid-template-rows: auto auto;
+}
+.remakeBlock .remakes{ 
+    width: auto; 
+    height:0; 
+    border-bottom:20px solid #f97b92;
+    border-top:20px solid #f97b92;
+    border-right:20px solid transparent;
+    color: white;
+    font-family: PingFangTC;
+    font-size: 12px;
+    text-align: center;
+    line-height: -moz-block-height;
+    margin-left: 10px;
+    margin-right: 10px;
+  }
+.remakeBlock .ruleBlock{
+    grid-column: 1 / -1;
+    grid-row: 2 / -1;
+    margin: 16px 10px 0 10px;
+    font-family: PingFangTC;
+    font-size: 12px;
+    letter-spacing: 0.5px;
+    color: #696869;
+    width: 320px;
+    line-height: 1.5;
+    text-indent: -1em;
+    padding-left: 10px;
+    padding-right: 10px;
+    border-bottom-width: 1px;
+    border-bottom-style: solid;
+    border-bottom-color: rgba(155, 155, 155, 0.2);
+}
+li{
+    padding-bottom: 6px;
+}
+.rule{
+    padding-bottom: 14px;
+}
+.main .applyButton{
+    grid-column: 1 / -1;
+    grid-row: 4 / -1;
+    place-self: center;
+}
+.applyButton button{
+    width: 202px;
+    height: 40px;
+    border-radius: 8px;
+    background-color: #f2485c;
+    border: none;
+    font-family: PingFangTC;
+    font-size: 16px;
+    font-weight: 600;
+    letter-spacing: 0.7px;
+    color: #fff;
+    margin-top: 12px;
+    margin-bottom: 12px;
+}
+.wrapping .footer{
+    grid-column: 1 / -1;
+    grid-row: 3 / -1;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    background-color: #f2f2f2;
+    justify-content: center;
+}
+.footer .footer_content{
+    font-family: PingFangTC;
+    font-size: 14px;
+    font-weight: 500;
+    letter-spacing: 0.5px;
+    color: #9b9b9b;
+    margin: 10px 19px 10px 19px;
+}
+.mail{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    align-items: center;
+}
+.email_text{
+    margin-left: 6px;
+}
